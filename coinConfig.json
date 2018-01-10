@@ -25,4 +25,13 @@
     "mixIn": 4,
     "shortCode": "AEON"
   }
+  ,
+  "upsh": {
+    "funcFile": "./lib/coins/upsh.js",
+    "paymentFile": "./payment_systems/upsh.js",
+    "sigDigits": 1000000000000,
+    "name": "Up Share Coin",
+    "mixIn": 4,
+    "shortCode": "UPSh"
+  }
 }

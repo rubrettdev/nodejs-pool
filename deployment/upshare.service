@@ -1,0 +1,13 @@
+[Unit]
+Description=UPShare Daemon
+After=network.target
+
+[Service]
+Type=forking
+GuessMainPID=no
+ExecStart=/usr/local/src/UPShare/build/src/upshare-daemon --rpc-bind-ip 127.0.0.1
+Restart=always
+User=upsharedaemon
+
+[Install]
+WantedBy=multi-user.target

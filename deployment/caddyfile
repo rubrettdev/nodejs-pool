@@ -1,10 +1,11 @@
 # Catch-all vhost
-:80 {
+{
     root /var/www
     proxy /leafApi 127.0.0.1:8000
     proxy /api 127.0.0.1:8001 {
         without /api
     }
+    proxy /service 127.0.0.1:3000
     proxy /socket.io 127.0.0.1:8001 {
         header_upstream Connection {>Connection}
         header_upstream Upgrade {>Upgrade}
